@@ -10,7 +10,7 @@ describe('Testing the functionality of mos.ru', () => {
 
     it('Login to the student is electronic diary', () => {
         cy.get('.Menu_menuWrapper__341hI').contains('Услуги').trigger('mouseover');
-        cy.get('.popup-content').contains('Каталог услуг').click();
+        cy.get('.Submenu_submenu__1trc6').contains('Каталог услуг').click();
         cy.get('.mos-service-list').contains('Электронный дневник школьника').click();
         cy.get('.style_aside-login_action__2KJI4').click();
         cy.get('#login').type(profile.login);
